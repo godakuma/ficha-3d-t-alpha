@@ -6,7 +6,7 @@
     "title": "Abrir Ficha",
     "icon": "https://cdn-icons-png.flaticon.com/512/1149/1149636.png",
     "popover": "https://mestragem-firebase.vercel.app/index.html",
-    "height": 880,
-    "width": 780
+    "height": 1080,
+    "width": 720
   }
 }
