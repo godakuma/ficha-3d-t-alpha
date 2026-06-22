@@ -1,12 +1,12 @@
 {
-  "name": "3D&T Alpha - Fichas",
+  "name": "Contador de Tempo RPG",
   "version": "1.0.0",
   "manifest_version": 1,
   "action": {
-    "title": "Abrir Ficha",
-    "icon": "https://cdn-icons-png.flaticon.com/512/1149/1149636.png",
-    "popover": "https://mestragem-firebase.vercel.app/index.html",
-    "height": 1080,
-    "width": 720
+    "title": "Contador de Tempo RPG",
+    "icon": "/icon.svg",
+    "popover": "https://tempo-e-turno.vercel.app/",
+    "height": 500,
+    "width": 400
   }
 }
