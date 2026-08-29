@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -320,7 +320,6 @@
             padding-bottom: 3px;
         }
         
-        /* ATRIBUTOS EM 3 COLUNAS - FORMATO VERTICAL PURO */
         .atributos-3colunas {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -448,19 +447,6 @@
             text-align: center;
             font-size: 13px;
         }
-        .atributo-item .btn-atributo-modulo {
-            padding: 4px 12px;
-            background: #8a9a7a;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 13px;
-            font-weight: bold;
-            flex-shrink: 0;
-            line-height: 1.4;
-        }
-        .atributo-item .btn-atributo-modulo:hover { background: #a0b090; }
         .atributo-item .mini-resultado {
             font-size: 11px;
             color: #5a5a5a;
@@ -566,7 +552,6 @@
             background: #f5e0d0 !important;
         }
         
-        /* RECURSOS EM 3 COLUNAS */
         .recursos-3colunas {
             display: flex;
             flex-wrap: wrap;
@@ -1085,7 +1070,6 @@
         .subficha-avatar img { width: 100%; height: 100%; object-fit: cover; }
         .subficha-avatar-placeholder { font-size: 40px; color: #8a9a7a; }
         
-        /* SUB-FICHA ATRIBUTOS EM 3 COLUNAS - FORMATO VERTICAL PURO */
         .subficha-atributos-3colunas {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -1315,7 +1299,6 @@
         }
         .subficha-rolagem-generica-item .btn-roll-sub:hover { background: #a0b090; }
         
-        /* SUB-FICHA RECURSOS EM 3 COLUNAS */
         .subficha-recursos-3colunas {
             display: flex;
             flex-wrap: wrap;
@@ -1616,7 +1599,6 @@
             100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
         }
         
-        /* Remove TODAS as barras de rolagem de inputs numéricos */
         input[type="number"] {
             -moz-appearance: textfield !important;
             appearance: textfield !important;
@@ -1627,6 +1609,171 @@
             margin: 0 !important;
         }
         
+        .testes-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background: #ddd4c8;
+            border-radius: 12px;
+            padding: 15px;
+        }
+        .testes-coluna {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .teste-item {
+            background: #f0ebe3;
+            border-radius: 6px;
+            padding: 6px 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            min-height: 36px;
+        }
+        .teste-item .teste-nome {
+            font-weight: bold;
+            font-size: 12px;
+            min-width: 110px;
+            color: #3d3d3d;
+        }
+        .teste-item .teste-checkbox {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: #8a9a7a;
+        }
+        .teste-item .teste-btn-roll {
+            background: #8a9a7a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 2px 8px;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .teste-item .teste-btn-roll:hover { background: #a0b090; }
+        .teste-item .teste-resultado {
+            font-size: 11px;
+            font-weight: bold;
+            min-width: 60px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: #f5efe6;
+            text-align: center;
+            border-left: 2px solid transparent;
+            flex: 1;
+            min-width: 80px;
+        }
+        .teste-item .teste-resultado.sucesso {
+            border-left-color: #4a8a4a;
+            color: #4a8a4a;
+        }
+        .teste-item .teste-resultado.falha {
+            border-left-color: #c0392b;
+            color: #c0392b;
+        }
+        .teste-item .teste-bonus {
+            width: 40px;
+            background: #f5efe6;
+            color: #3d3d3d;
+            border: 1px solid #c0b8ac;
+            border-radius: 3px;
+            padding: 2px;
+            text-align: center;
+            font-size: 11px;
+        }
+        .teste-item .teste-atributo-label {
+            font-size: 9px;
+            color: #6a6a5a;
+            min-width: 20px;
+            font-weight: bold;
+        }
+        .teste-oficio-input {
+            flex: 1;
+            min-width: 120px;
+            background: #f5efe6;
+            color: #3d3d3d;
+            border: 1px solid #c0b8ac;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-size: 11px;
+        }
+        .testes-dificuldade-select {
+            background: #f5efe6;
+            color: #3d3d3d;
+            border: 1px solid #c0b8ac;
+            border-radius: 3px;
+            padding: 2px 4px;
+            font-size: 11px;
+            min-width: 60px;
+        }
+        .testes-header {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            padding: 8px 12px;
+            background: #f0ebe3;
+            border-radius: 8px;
+        }
+        .testes-header label {
+            font-size: 12px;
+            font-weight: bold;
+            color: #5a7a8a;
+        }
+        
+        /* Estilos para o Teste de Morte */
+        .teste-morte-modulo {
+            grid-column: 1 / -1;
+            background: #f0ebe3;
+            border-radius: 8px;
+            padding: 12px 15px;
+            margin-top: 10px;
+            border: 2px solid #5a7a8a;
+        }
+        .teste-morte-modulo .teste-morte-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .teste-morte-modulo .teste-morte-titulo {
+            font-weight: bold;
+            font-size: 16px;
+            color: #c0392b;
+        }
+        .teste-morte-modulo .teste-morte-btn {
+            background: #c0392b;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .teste-morte-modulo .teste-morte-btn:hover { background: #e05040; }
+        .teste-morte-modulo .teste-morte-resultado {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f5efe6;
+            border-radius: 6px;
+            border-left: 4px solid #5a7a8a;
+            font-size: 13px;
+            min-height: 40px;
+            color: #3d3d3d;
+        }
+        .teste-morte-modulo .teste-morte-resultado .morte-valor {
+            font-weight: bold;
+            font-size: 18px;
+            color: #c0392b;
+        }
+        
         @media (max-width: 1100px) {
             .layout-tres-colunas { flex-direction: column; }
             .coluna-chat { min-width: auto; max-height: 300px; }
@@ -1634,6 +1781,7 @@
             .grid-4 { grid-template-columns: repeat(2, 1fr); }
             .card-full { grid-column: span 2; }
             .coluna-direita { min-width: 300px; }
+            .testes-container { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
             .atributos-3colunas,
@@ -1732,6 +1880,7 @@
                 <div id="editorFicha" style="display: none;">
                     <div class="abas">
                         <button class="aba-btn ativa" data-aba="principal">📋 Principal</button>
+                        <button class="aba-btn" data-aba="testes">🎯 Testes</button>
                         <button class="aba-btn" data-aba="vantagens">✨ Vantagens</button>
                         <button class="aba-btn" data-aba="inventario">🎒 Inventário</button>
                         <button class="aba-btn" data-aba="magias">🔮 Magias</button>
@@ -1753,7 +1902,6 @@
                                 <div class="card-atributos">
                                     <h3 style="margin-top:0;">📊 Atributos</h3>
                                     <div class="atributos-3colunas">
-                                        <!-- Força -->
                                         <div class="atributo-item">
                                             <div class="atributo-header">
                                                 <span class="atributo-titulo">💪 F</span>
@@ -1773,15 +1921,8 @@
                                             <div class="atributo-linha">
                                                 <div class="bonus3"><label>BFA</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="bonusForcaAtaque" value="0"></div>
                                             </div>
-                                            <div class="atributo-linha">
-                                                <label>Dados</label>
-                                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-atributo" id="qtdDadosForca" value="1">
-                                                <button class="btn-atributo-modulo" data-nome="Força" data-atributo="forca" data-bonus1="bonusForca" data-bonus2="bonusForca2" data-bonus3="bonusForcaAtaque" data-chk1="chkBonusForca" data-chk2="chkBonusForca2" data-qtd="qtdDadosForca" data-result="Forca">🎲</button>
-                                            </div>
-                                            <div class="mini-resultado" id="resultForca"></div>
                                         </div>
                                         
-                                        <!-- Habilidade -->
                                         <div class="atributo-item">
                                             <div class="atributo-header">
                                                 <span class="atributo-titulo">🎯 H</span>
@@ -1798,15 +1939,8 @@
                                                 <div class="bonus2"><label>B2</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="bonusHabilidade2" value="0"></div>
                                                 <input type="checkbox" id="chkBonusHabilidade2" class="bonus-checkbox" checked>
                                             </div>
-                                            <div class="atributo-linha">
-                                                <label>Dados</label>
-                                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-atributo" id="qtdDadosHabilidade" value="1">
-                                                <button class="btn-atributo-modulo" data-nome="Habilidade" data-atributo="habilidade" data-bonus1="bonusHabilidade" data-bonus2="bonusHabilidade2" data-bonus3="" data-chk1="chkBonusHabilidade" data-chk2="chkBonusHabilidade2" data-qtd="qtdDadosHabilidade" data-result="Habilidade">🎲</button>
-                                            </div>
-                                            <div class="mini-resultado" id="resultHabilidade"></div>
                                         </div>
                                         
-                                        <!-- Resistência -->
                                         <div class="atributo-item">
                                             <div class="atributo-header">
                                                 <span class="atributo-titulo">🛡️ R</span>
@@ -1823,15 +1957,8 @@
                                                 <div class="bonus2"><label>B2</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="bonusResistencia2" value="0"></div>
                                                 <input type="checkbox" id="chkBonusResistencia2" class="bonus-checkbox" checked>
                                             </div>
-                                            <div class="atributo-linha">
-                                                <label>Dados</label>
-                                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-atributo" id="qtdDadosResistencia" value="1">
-                                                <button class="btn-atributo-modulo" data-nome="Resistência" data-atributo="resistencia" data-bonus1="bonusResistencia" data-bonus2="bonusResistencia2" data-bonus3="" data-chk1="chkBonusResistencia" data-chk2="chkBonusResistencia2" data-qtd="qtdDadosResistencia" data-result="Resistencia">🎲</button>
-                                            </div>
-                                            <div class="mini-resultado" id="resultResistencia"></div>
                                         </div>
                                         
-                                        <!-- Armadura -->
                                         <div class="atributo-item">
                                             <div class="atributo-header">
                                                 <span class="atributo-titulo">⚔️ A</span>
@@ -1851,15 +1978,8 @@
                                             <div class="atributo-linha">
                                                 <div class="bonus3"><label>BFD</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="bonusArmaduraDefesa" value="0"></div>
                                             </div>
-                                            <div class="atributo-linha">
-                                                <label>Dados</label>
-                                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-atributo" id="qtdDadosArmadura" value="1">
-                                                <button class="btn-atributo-modulo" data-nome="Armadura" data-atributo="armadura" data-bonus1="bonusArmadura" data-bonus2="bonusArmadura2" data-bonus3="bonusArmaduraDefesa" data-chk1="chkBonusArmadura" data-chk2="chkBonusArmadura2" data-qtd="qtdDadosArmadura" data-result="Armadura">🎲</button>
-                                            </div>
-                                            <div class="mini-resultado" id="resultArmadura"></div>
                                         </div>
                                         
-                                        <!-- PdF -->
                                         <div class="atributo-item">
                                             <div class="atributo-header">
                                                 <span class="atributo-titulo">🔮 PdF</span>
@@ -1879,15 +1999,8 @@
                                             <div class="atributo-linha">
                                                 <div class="bonus3"><label>BFA</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="bonusPdfAtaque" value="0"></div>
                                             </div>
-                                            <div class="atributo-linha">
-                                                <label>Dados</label>
-                                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-atributo" id="qtdDadosPdf" value="1">
-                                                <button class="btn-atributo-modulo" data-nome="PdF" data-atributo="pdf" data-bonus1="bonusPdf" data-bonus2="bonusPdf2" data-bonus3="bonusPdfAtaque" data-chk1="chkBonusPdf" data-chk2="chkBonusPdf2" data-qtd="qtdDadosPdf" data-result="Pdf">🎲</button>
-                                            </div>
-                                            <div class="mini-resultado" id="resultPdf"></div>
                                         </div>
                                         
-                                        <!-- Rolagem Genérica -->
                                         <div class="rolagem-generica-item">
                                             <div class="rolagem-titulo">🎲 Rolagem Genérica</div>
                                             <div class="rolagem-campos">
@@ -1986,6 +2099,20 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div id="aba-testes" class="aba-conteudo">
+                        <div class="testes-header">
+                            <label>🎯 Dificuldade:</label>
+                            <select id="testeDificuldadeGlobal" class="testes-dificuldade-select">
+                                <option value="facil">Fácil (08)</option>
+                                <option value="medio" selected>Médio (10)</option>
+                                <option value="dificil">Difícil (14)</option>
+                            </select>
+                            <label style="margin-left: 15px;">➕ Bônus (B1):</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="testeBonusGlobal" value="0" style="width:50px; background:#f5efe6; border:1px solid #c0b8ac; border-radius:3px; padding:2px 4px; text-align:center;">
+                        </div>
+                        <div class="testes-container" id="testesContainer"></div>
                     </div>
                     
                     <div id="aba-vantagens" class="aba-conteudo">
@@ -2438,40 +2565,6 @@
         return pontosRestantes;
     }
     
-    // ============================================================
-    // FUNÇÕES DA FICHA PRINCIPAL (NÃO ALTERADAS)
-    // ============================================================
-    
-    function testarAtributo(nome, atributoId, bonus1Id, bonus2Id, bonus3Id, chk1Id, chk2Id, qtdId, resultId) { 
-        const valor = parseInt(document.getElementById(atributoId).value) || 0; 
-        const incluirBonus1 = document.getElementById(chk1Id)?.checked !== false;
-        const incluirBonus2 = document.getElementById(chk2Id)?.checked !== false;
-        let bonus1 = 0, bonus2 = 0;
-        if (incluirBonus1) bonus1 = parseInt(document.getElementById(bonus1Id)?.value) || 0;
-        if (incluirBonus2) bonus2 = parseInt(document.getElementById(bonus2Id)?.value) || 0;
-        const alvo = valor + bonus1 + bonus2; 
-        const qtdDados = parseInt(document.getElementById(qtdId)?.value) || 1;
-        let dados = [];
-        let soma = 0;
-        for (let i = 0; i < qtdDados; i++) {
-            const dado = Math.floor(Math.random() * 6) + 1;
-            dados.push(dado);
-            soma += dado;
-        }
-        const sucesso = soma <= alvo;
-        const textoBonus = ` (${valor}${incluirBonus1 ? ` + ${bonus1}` : ''}${incluirBonus2 ? ` + ${bonus2}` : ''} = ${alvo})`;
-        const resultado = `${nome}: 🎲 [${dados.join(' + ')}] = ${soma} | Alvo: ${alvo}${textoBonus} → ${sucesso ? '✅ SUCESSO' : '❌ FALHA'}`;
-        
-        const miniResultado = `🎲 [${dados.join('+')}] = ${soma} → ${sucesso ? '✅' : '❌'} (Alvo: ${alvo})`;
-        atualizarMiniResultado(resultId, miniResultado, sucesso);
-        
-        const ehSecreta = isGM && document.getElementById('chkSecretRoll')?.checked === true; 
-        addMensagem(resultado, ehSecreta); 
-        if (!ehSecreta) enviarRolagemFirebase(resultado, false); 
-        animarDado();
-        debounceSave(); 
-    }
-    
     function ataqueCurto() { 
         animarDado(); 
         const qtdDados = parseInt(document.getElementById('qtdDadosAtaqueCurto')?.value) || 1;
@@ -2504,9 +2597,6 @@
         const total = soma + fDobrado + hTotal + bfa;
         const criticoStr = criticos > 0 ? ` (${criticos} crítico${criticos > 1 ? 's' : ''}!)` : '';
         const resultado = `⚔️ Ataque Curto${criticoStr}: ${dados.join('+')} + ${fDobrado}(F) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`; 
-        
-        const miniResultado = `⚔️ ${dados.join('+')} + ${fDobrado}(F) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`;
-        atualizarMiniResultado('Forca', miniResultado, true);
         
         const ehSecreta = isGM && document.getElementById('chkSecretRoll')?.checked === true; 
         addMensagem(resultado, ehSecreta); 
@@ -2547,9 +2637,6 @@
         const criticoStr = criticos > 0 ? ` (${criticos} crítico${criticos > 1 ? 's' : ''}!)` : '';
         const resultado = `🏹 Ataque à Distância${criticoStr}: ${dados.join('+')} + ${pDobrado}(PdF) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`; 
         
-        const miniResultado = `🏹 ${dados.join('+')} + ${pDobrado}(PdF) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`;
-        atualizarMiniResultado('Pdf', miniResultado, true);
-        
         const ehSecreta = isGM && document.getElementById('chkSecretRoll')?.checked === true; 
         addMensagem(resultado, ehSecreta); 
         if (!ehSecreta) enviarRolagemFirebase(resultado, false); 
@@ -2588,9 +2675,6 @@
         const total = soma + aDobrado + hTotal + bfd;
         const criticoStr = criticos > 0 ? ` (${criticos} crítico${criticos > 1 ? 's' : ''}!)` : '';
         const resultado = `🛡️ Defesa${criticoStr}: ${dados.join('+')} + ${aDobrado}(A) + ${hTotal}(H) + ${bfd}(BFD) = ${total}`; 
-        
-        const miniResultado = `🛡️ ${dados.join('+')} + ${aDobrado}(A) + ${hTotal}(H) + ${bfd}(BFD) = ${total}`;
-        atualizarMiniResultado('Armadura', miniResultado, true);
         
         const ehSecreta = isGM && document.getElementById('chkSecretRoll')?.checked === true; 
         addMensagem(resultado, ehSecreta); 
@@ -2634,19 +2718,15 @@
             pontos: 0, xp: 0, dinheiro: 0,
             vantagemRegionalNome: '', vantagemRegionalCusto: 0, vantagemRegionalDesc: '',
             vantagemUnicaNome: '', vantagemUnicaCusto: 0, vantagemUnicaDesc: '',
-            listas: { vantagens: [], desvantagens: [], pericias: [], especializacoes: [], itens: [], equipamentos: [], tiposDano: [], magias: [], kits: [] } 
+            listas: { vantagens: [], desvantagens: [], pericias: [], especializacoes: [], itens: [], equipamentos: [], tiposDano: [], magias: [], kits: [] },
+            testes: {}
         }; 
     }
-    
-    // ============================================================
-    // FUNÇÕES CORRIGIDAS DAS SUBFICHAS (COM CONVERSÃO PARA NÚMERO)
-    // ============================================================
     
     function testarAtributoSub(subIndex, nome, atributoId, bonus1Id, bonus2Id, bonus3Id, chk1Id, chk2Id, qtdId, resultId) {
         const sub = subFichas[subIndex];
         if (!sub) return;
         
-        // CONVERTENDO TODOS OS VALORES PARA NÚMERO
         const valor = Number(sub[atributoId]) || 0;
         
         const incluirBonus1 = document.getElementById(`${chk1Id}-${subIndex}`)?.checked !== false;
@@ -2692,7 +2772,6 @@
             if (dado === 6) criticos++;
         }
         
-        // CONVERTENDO TODOS OS VALORES PARA NÚMERO
         let f = Number(sub.forca) || 0;
         let b1 = 0, b2 = 0;
         if (document.getElementById(`subficha-chkBonusForca-${subIndex}`)?.checked !== false) {
@@ -2722,8 +2801,6 @@
         const total = soma + fDobrado + hTotal + bfa;
         const criticoStr = criticos > 0 ? ` (${criticos} crítico${criticos > 1 ? 's' : ''}!)` : '';
         const resultado = `[${sub.nome}] ⚔️ Ataque Curto${criticoStr}: ${dados.join('+')} + ${fDobrado}(F) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`;
-        const miniResultado = `⚔️ ${dados.join('+')} + ${fDobrado}(F) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`;
-        atualizarMiniResultadoSub(subIndex, 'Força', miniResultado, true);
         
         addMensagemSub(subIndex, resultado, false);
         addMensagem(resultado, false);
@@ -2745,7 +2822,6 @@
             if (dado === 6) criticos++;
         }
         
-        // CONVERTENDO TODOS OS VALORES PARA NÚMERO
         let p = Number(sub.pdf) || 0;
         let b1 = 0, b2 = 0;
         if (document.getElementById(`subficha-chkBonusPdf-${subIndex}`)?.checked !== false) {
@@ -2775,8 +2851,6 @@
         const total = soma + pDobrado + hTotal + bfa;
         const criticoStr = criticos > 0 ? ` (${criticos} crítico${criticos > 1 ? 's' : ''}!)` : '';
         const resultado = `[${sub.nome}] 🏹 Ataque à Distância${criticoStr}: ${dados.join('+')} + ${pDobrado}(PdF) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`;
-        const miniResultado = `🏹 ${dados.join('+')} + ${pDobrado}(PdF) + ${hTotal}(H) + ${bfa}(BFA) = ${total}`;
-        atualizarMiniResultadoSub(subIndex, 'PdF', miniResultado, true);
         
         addMensagemSub(subIndex, resultado, false);
         addMensagem(resultado, false);
@@ -2798,7 +2872,6 @@
             if (dado === 6) criticos++;
         }
         
-        // CONVERTENDO TODOS OS VALORES PARA NÚMERO
         let a = Number(sub.armadura) || 0;
         let b1 = 0, b2 = 0;
         if (document.getElementById(`subficha-chkBonusArmadura-${subIndex}`)?.checked !== false) {
@@ -2828,8 +2901,6 @@
         const total = soma + aDobrado + hTotal + bfd;
         const criticoStr = criticos > 0 ? ` (${criticos} crítico${criticos > 1 ? 's' : ''}!)` : '';
         const resultado = `[${sub.nome}] 🛡️ Defesa${criticoStr}: ${dados.join('+')} + ${aDobrado}(A) + ${hTotal}(H) + ${bfd}(BFD) = ${total}`;
-        const miniResultado = `🛡️ ${dados.join('+')} + ${aDobrado}(A) + ${hTotal}(H) + ${bfd}(BFD) = ${total}`;
-        atualizarMiniResultadoSub(subIndex, 'Armadura', miniResultado, true);
         
         addMensagemSub(subIndex, resultado, false);
         addMensagem(resultado, false);
@@ -2841,7 +2912,6 @@
     function rolarGenericoSub(subIndex) {
         const sub = subFichas[subIndex];
         if (!sub) return;
-        // CONVERTENDO PARA NÚMERO
         const qtd = parseInt(document.getElementById(`subficha-qtdDados-${subIndex}`).value) || 1;
         const mod = parseInt(document.getElementById(`subficha-modRoll-${subIndex}`).value) || 0;
         let resultados = [], soma = 0;
@@ -2859,10 +2929,6 @@
         animarDado();
         debounceSaveSubFicha();
     }
-    
-    // ============================================================
-    // FUNÇÕES DE RENDERIZAÇÃO DAS SUBFICHAS (NÃO ALTERADAS)
-    // ============================================================
     
     function renderizarHabilidadesKitSub(sub, kit, kitIndex, subIndex) {
         const habilidades = kit.habilidades || [];
@@ -3067,6 +3133,7 @@
         
         abasDiv.innerHTML = `
             <button class="subficha-aba-btn ativa" data-aba-sub="principal">📋 Principal</button>
+            <button class="subficha-aba-btn" data-aba-sub="testes">🎯 Testes</button>
             <button class="subficha-aba-btn" data-aba-sub="vantagens">✨ Vantagens</button>
             <button class="subficha-aba-btn" data-aba-sub="inventario">🎒 Inventário</button>
             <button class="subficha-aba-btn" data-aba-sub="magias">🔮 Magias</button>
@@ -3118,12 +3185,6 @@
                                     <div class="atributo-linha">
                                         <div class="bonus3"><label>BFA</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="subficha-bonusForcaAtaque-${index}" value="${sub.bonusForcaAtaque || 0}"></div>
                                     </div>
-                                    <div class="atributo-linha">
-                                        <label>Dados</label>
-                                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-sub-atributo" id="subficha-qtdDadosForca-${index}" value="1">
-                                        <button class="btn-atributo-sub-modulo" data-sub="${index}" data-atributo="forca" data-bonus1="bonusForca" data-bonus2="bonusForca2" data-bonus3="bonusForcaAtaque" data-chk1="subficha-chkBonusForca" data-chk2="subficha-chkBonusForca2" data-qtd="subficha-qtdDadosForca" data-nome="Força">🎲</button>
-                                    </div>
-                                    <div class="mini-resultado-sub" id="sub-result-${index}-Força"></div>
                                 </div>
                                 <div class="subficha-atributo-item">
                                     <div class="atributo-header">
@@ -3141,12 +3202,6 @@
                                         <div class="bonus2"><label>B2</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="subficha-bonusHabilidade2-${index}" value="${sub.bonusHabilidade2}"></div>
                                         <input type="checkbox" id="subficha-chkBonusHabilidade2-${index}" class="bonus-checkbox" checked>
                                     </div>
-                                    <div class="atributo-linha">
-                                        <label>Dados</label>
-                                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-sub-atributo" id="subficha-qtdDadosHabilidade-${index}" value="1">
-                                        <button class="btn-atributo-sub-modulo" data-sub="${index}" data-atributo="habilidade" data-bonus1="bonusHabilidade" data-bonus2="bonusHabilidade2" data-bonus3="" data-chk1="subficha-chkBonusHabilidade" data-chk2="subficha-chkBonusHabilidade2" data-qtd="subficha-qtdDadosHabilidade" data-nome="Habilidade">🎲</button>
-                                    </div>
-                                    <div class="mini-resultado-sub" id="sub-result-${index}-Habilidade"></div>
                                 </div>
                                 <div class="subficha-atributo-item">
                                     <div class="atributo-header">
@@ -3164,12 +3219,6 @@
                                         <div class="bonus2"><label>B2</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="subficha-bonusResistencia2-${index}" value="${sub.bonusResistencia2}"></div>
                                         <input type="checkbox" id="subficha-chkBonusResistencia2-${index}" class="bonus-checkbox" checked>
                                     </div>
-                                    <div class="atributo-linha">
-                                        <label>Dados</label>
-                                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-sub-atributo" id="subficha-qtdDadosResistencia-${index}" value="1">
-                                        <button class="btn-atributo-sub-modulo" data-sub="${index}" data-atributo="resistencia" data-bonus1="bonusResistencia" data-bonus2="bonusResistencia2" data-bonus3="" data-chk1="subficha-chkBonusResistencia" data-chk2="subficha-chkBonusResistencia2" data-qtd="subficha-qtdDadosResistencia" data-nome="Resistência">🎲</button>
-                                    </div>
-                                    <div class="mini-resultado-sub" id="sub-result-${index}-Resistência"></div>
                                 </div>
                                 <div class="subficha-atributo-item">
                                     <div class="atributo-header">
@@ -3190,12 +3239,6 @@
                                     <div class="atributo-linha">
                                         <div class="bonus3"><label>BFD</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="subficha-bonusArmaduraDefesa-${index}" value="${sub.bonusArmaduraDefesa || 0}"></div>
                                     </div>
-                                    <div class="atributo-linha">
-                                        <label>Dados</label>
-                                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-sub-atributo" id="subficha-qtdDadosArmadura-${index}" value="1">
-                                        <button class="btn-atributo-sub-modulo" data-sub="${index}" data-atributo="armadura" data-bonus1="bonusArmadura" data-bonus2="bonusArmadura2" data-bonus3="bonusArmaduraDefesa" data-chk1="subficha-chkBonusArmadura" data-chk2="subficha-chkBonusArmadura2" data-qtd="subficha-qtdDadosArmadura" data-nome="Armadura">🎲</button>
-                                    </div>
-                                    <div class="mini-resultado-sub" id="sub-result-${index}-Armadura"></div>
                                 </div>
                                 <div class="subficha-atributo-item">
                                     <div class="atributo-header">
@@ -3216,12 +3259,6 @@
                                     <div class="atributo-linha">
                                         <div class="bonus3"><label>BFA</label><input type="text" inputmode="numeric" pattern="[0-9]*" id="subficha-bonusPdfAtaque-${index}" value="${sub.bonusPdfAtaque || 0}"></div>
                                     </div>
-                                    <div class="atributo-linha">
-                                        <label>Dados</label>
-                                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="qtd-dados-sub-atributo" id="subficha-qtdDadosPdf-${index}" value="1">
-                                        <button class="btn-atributo-sub-modulo" data-sub="${index}" data-atributo="pdf" data-bonus1="bonusPdf" data-bonus2="bonusPdf2" data-bonus3="bonusPdfAtaque" data-chk1="subficha-chkBonusPdf" data-chk2="subficha-chkBonusPdf2" data-qtd="subficha-qtdDadosPdf" data-nome="PdF">🎲</button>
-                                    </div>
-                                    <div class="mini-resultado-sub" id="sub-result-${index}-PdF"></div>
                                 </div>
                                 <div class="subficha-rolagem-generica-item">
                                     <div class="rolagem-titulo">🎲 Rolagem Genérica</div>
@@ -3292,6 +3329,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <div id="subficha-aba-testes-${index}" class="subficha-aba-conteudo">
+                <div class="testes-header">
+                    <label>🎯 Dificuldade:</label>
+                    <select id="subficha-testeDificuldadeGlobal-${index}" class="testes-dificuldade-select">
+                        <option value="facil">Fácil (08)</option>
+                        <option value="medio" selected>Médio (10)</option>
+                        <option value="dificil">Difícil (14)</option>
+                    </select>
+                    <label style="margin-left: 15px;">➕ Bônus (B1):</label>
+                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="subficha-testeBonusGlobal-${index}" value="0" style="width:50px; background:#f5efe6; border:1px solid #c0b8ac; border-radius:3px; padding:2px 4px; text-align:center;">
+                </div>
+                <div class="testes-container" id="subficha-testesContainer-${index}"></div>
             </div>
             
             <div id="subficha-aba-vantagens-${index}" class="subficha-aba-conteudo">
@@ -3487,6 +3538,7 @@
         }
         
         renderizarSubListas(index);
+        renderizarTestesSubFicha(index);
         atualizarPontosSub(index);
     }
     
@@ -3566,6 +3618,7 @@
         const especializacoesContainer = document.getElementById(`subficha-especializacoesLista-${index}`);
         if (especializacoesContainer) {
             const lista = sub.listas.especializacoes || [];
+            lista.sort((a, b) => (a.nome || '').localeCompare(b.nome || ''));
             especializacoesContainer.innerHTML = '';
             lista.forEach((elemento, idx) => {
                 const itemDiv = document.createElement('div');
@@ -3813,9 +3866,503 @@
         document.getElementById('modalCriarSubFicha').style.display = 'none'; 
     }
     
-    // ============================================================
-    // FUNÇÕES DE LISTA E RENDERIZAÇÃO DA FICHA PRINCIPAL
-    // ============================================================
+    // LISTA DE TESTES - COM ARROMBAMENTO (F) sem o (F) no nome
+    const TESTES_LISTA = [
+        { nome: 'Acrobacia', attr: 'H' },
+        { nome: 'Alpinismo', attr: 'H' },
+        { nome: 'Armadilhas', attr: 'H' },
+        { nome: 'Armas', attr: 'H' },
+        { nome: 'Arquearia', attr: 'PdF' },
+        { nome: 'Arrombamento', attr: 'H' },
+        { nome: 'Arrombamento', attr: 'F' },
+        { nome: 'Artes Marciais', attr: 'H' },
+        { nome: 'Astronomia', attr: 'H' },
+        { nome: 'Atuação', attr: 'H' },
+        { nome: 'Biologia', attr: 'H' },
+        { nome: 'Ciências Proibidas', attr: 'H' },
+        { nome: 'Cirurgia', attr: 'H' },
+        { nome: 'Código Morse', attr: 'H' },
+        { nome: 'Computação', attr: 'H' },
+        { nome: 'Condução', attr: 'H' },
+        { nome: 'Conjuração', attr: 'H' },
+        { nome: 'Corrida', attr: 'R' },
+        { nome: 'Criação de Poções', attr: 'H' },
+        { nome: 'Criptografia', attr: 'H' },
+        { nome: 'Defesa contra Magia', attr: 'H' },
+        { nome: 'Diagnose', attr: 'H' },
+        { nome: 'Disfarce', attr: 'H' },
+        { nome: 'Doma', attr: 'H' },
+        { nome: 'Eletrônica', attr: 'H' },
+        { nome: 'Engenharia', attr: 'H' },
+        { nome: 'Escrever pergaminhos', attr: 'H' },
+        { nome: 'Falsificação', attr: 'H' },
+        { nome: 'Fotografia', attr: 'H' },
+        { nome: 'Furtividade', attr: 'H' },
+        { nome: 'Geografia', attr: 'H' },
+        { nome: 'Hipnose', attr: 'H' },
+        { nome: 'História', attr: 'H' },
+        { nome: 'Instrumentos Musicais', attr: 'H' },
+        { nome: 'Interrogatório', attr: 'H' },
+        { nome: 'Intimidação', attr: 'F' },
+        { nome: 'Jogos', attr: 'H' },
+        { nome: 'Lábia', attr: 'H' },
+        { nome: 'Leitura Labial', attr: 'H' },
+        { nome: 'Linguagem de Sinais', attr: 'H' },
+        { nome: 'Linguagens Místicas', attr: 'H' },
+        { nome: 'Manobras de Combate', attr: 'H' },
+        { nome: 'Manutenção', attr: 'H' },
+        { nome: 'Mecânica', attr: 'H' },
+        { nome: 'Mergulho', attr: 'H' },
+        { nome: 'Meteorologia', attr: 'H' },
+        { nome: 'Montaria', attr: 'H' },
+        { nome: 'Natação', attr: 'H' },
+        { nome: 'Navegação', attr: 'H' },
+        { nome: 'Outras Artes', attr: 'H' },
+        { nome: 'Outras Ciências', attr: 'H' },
+        { nome: 'Outras Sobrevivências', attr: 'H' },
+        { nome: 'Outros Esportes', attr: 'H' },
+        { nome: 'Outros Idiomas', attr: 'H' },
+        { nome: 'Pesca', attr: 'H' },
+        { nome: 'Pilotagem', attr: 'H' },
+        { nome: 'Prestidigitação', attr: 'H' },
+        { nome: 'Primeiros Socorros', attr: 'H' },
+        { nome: 'Psicologia', attr: 'H' },
+        { nome: 'Psiquiatria', attr: 'H' },
+        { nome: 'Punga', attr: 'H' },
+        { nome: 'Rastreio', attr: 'H' },
+        { nome: 'Sedução', attr: 'H' },
+        { nome: 'Teoria da Magia', attr: 'H' },
+        { nome: 'Tratamento', attr: 'H' },
+        { nome: 'Treinamento', attr: 'R' },
+        { nome: 'Veterinária', attr: 'H' }
+    ];
+    
+    const ATRIBUTOS_BASE = [
+        { nome: 'Força', attr: 'F' },
+        { nome: 'Habilidade', attr: 'H' },
+        { nome: 'Resistência', attr: 'R' },
+        { nome: 'Armadura', attr: 'A' },
+        { nome: 'Poder de Fogo', attr: 'PdF' }
+    ];
+    
+    function getValorAtributo(attr) {
+        const map = { 'F': 'forca', 'H': 'habilidade', 'R': 'resistencia', 'A': 'armadura', 'PdF': 'pdf' };
+        const id = map[attr];
+        if (!id) return 0;
+        return parseInt(document.getElementById(id)?.value) || 0;
+    }
+    
+    function getBonus1Atributo(attr) {
+        const map = { 'F': 'bonusForca', 'H': 'bonusHabilidade', 'R': 'bonusResistencia', 'A': 'bonusArmadura', 'PdF': 'bonusPdf' };
+        const id = map[attr];
+        if (!id) return 0;
+        return parseInt(document.getElementById(id)?.value) || 0;
+    }
+    
+    function getValorAtributoSub(sub, attr) {
+        const map = { 'F': 'forca', 'H': 'habilidade', 'R': 'resistencia', 'A': 'armadura', 'PdF': 'pdf' };
+        const key = map[attr];
+        if (!key) return 0;
+        return Number(sub[key]) || 0;
+    }
+    
+    function getBonus1AtributoSub(sub, attr) {
+        const map = { 'F': 'bonusForca', 'H': 'bonusHabilidade', 'R': 'bonusResistencia', 'A': 'bonusArmadura', 'PdF': 'bonusPdf' };
+        const key = map[attr];
+        if (!key) return 0;
+        return Number(sub[key]) || 0;
+    }
+    
+    function rolarTeste(nomeTeste, attr, isTreinado, bonus, dificuldade, isSub = false, subIndex = null) {
+        animarDado();
+        
+        let valorAttr, bonus1Attr;
+        let nomePersonagem;
+        let ehSecreta = isGM && document.getElementById('chkSecretRoll')?.checked === true;
+        let resultadoElement;
+        
+        if (isSub && subIndex !== null) {
+            const sub = subFichas[subIndex];
+            if (!sub) return;
+            valorAttr = getValorAtributoSub(sub, attr);
+            bonus1Attr = getBonus1AtributoSub(sub, attr);
+            nomePersonagem = sub.nome || 'Sub-ficha';
+            resultadoElement = document.getElementById(`subficha-teste-resultado-${subIndex}-${nomeTeste.replace(/\s/g, '')}`);
+            ehSecreta = false;
+        } else {
+            valorAttr = getValorAtributo(attr);
+            bonus1Attr = getBonus1Atributo(attr);
+            nomePersonagem = document.getElementById('nomePersonagem').value || currentUserName || 'Jogador';
+            resultadoElement = document.getElementById(`teste-resultado-${nomeTeste.replace(/\s/g, '')}`);
+        }
+        
+        const bonusNum = parseInt(bonus) || 0;
+        const treinoBonus = isTreinado ? 4 : 0;
+        
+        const baseAtributo = valorAttr + bonus1Attr + bonusNum;
+        
+        const dificuldadeMap = { 'facil': 8, 'medio': 10, 'dificil': 14 };
+        const dificuldadeNomeMap = { 'facil': 'Fácil', 'medio': 'Médio', 'dificil': 'Difícil' };
+        const dificuldadeValor = dificuldadeMap[dificuldade] || 10;
+        const dificuldadeNome = dificuldadeNomeMap[dificuldade] || 'Médio';
+        
+        const dado = Math.floor(Math.random() * 6) + 1;
+        
+        let alvoFinal;
+        if (dado === 6) {
+            alvoFinal = (baseAtributo * 2) + treinoBonus;
+        } else {
+            alvoFinal = baseAtributo + treinoBonus;
+        }
+        
+        const sucesso = dado + alvoFinal >= dificuldadeValor;
+        
+        let resultadoTexto;
+        const bonusStr = bonus1Attr ? `+${bonus1Attr}` : '';
+        
+        let nomeExibicao = nomeTeste;
+        if (nomeTeste === 'Ofício 01' || nomeTeste === 'Ofício 02') {
+            const oficioInput = document.getElementById(`${isSub ? `subficha-` : ''}teste-oficio${nomeTeste === 'Ofício 01' ? '1' : '2'}`);
+            if (oficioInput && oficioInput.value.trim()) {
+                nomeExibicao = oficioInput.value.trim();
+            }
+        }
+        
+        if (isSub && subIndex !== null) {
+            resultadoTexto = `[${nomePersonagem}] ${nomeExibicao} (${dificuldadeNome}): 🎲 ${dado} + ${alvoFinal}${dado === 6 ? ` [${baseAtributo}*2${treinoBonus ? '+4' : ''}]` : ` [${baseAtributo}${treinoBonus ? '+4' : ''}]`} = ${dado + alvoFinal} | Alvo: ${dificuldadeValor} → ${sucesso ? '✅ SUCESSO' : '❌ FALHA'}`;
+            addMensagemSub(subIndex, resultadoTexto, false);
+            addMensagem(resultadoTexto, false);
+            enviarRolagemFirebaseSub(subIndex, resultadoTexto, false);
+        } else {
+            resultadoTexto = `${nomeExibicao} (${dificuldadeNome}): 🎲 ${dado} + ${alvoFinal}${dado === 6 ? ` [${baseAtributo}*2${treinoBonus ? '+4' : ''}]` : ` [${baseAtributo}${treinoBonus ? '+4' : ''}]`} = ${dado + alvoFinal} | Alvo: ${dificuldadeValor} → ${sucesso ? '✅ SUCESSO' : '❌ FALHA'}`;
+            addMensagem(resultadoTexto, ehSecreta);
+            if (!ehSecreta) enviarRolagemFirebase(resultadoTexto, false);
+        }
+        
+        if (resultadoElement) {
+            const miniResultado = `🎲 ${dado} + ${alvoFinal} = ${dado + alvoFinal} → ${sucesso ? '✅' : '❌'}`;
+            resultadoElement.textContent = miniResultado;
+            resultadoElement.className = 'teste-resultado';
+            if (sucesso) resultadoElement.classList.add('sucesso');
+            else resultadoElement.classList.add('falha');
+        }
+        
+        debounceSave();
+    }
+    
+    // Função para o Teste de Morte
+    function rolarTesteMorte() {
+        animarDado();
+        const dado = Math.floor(Math.random() * 6) + 1;
+        let mensagem = '';
+        let resultadoHtml = '';
+        
+        // Determina o resultado baseado no valor do dado
+        if (dado === 1) {
+            mensagem = `💀 TESTE DE MORTE - Resultado: ${dado} → MUITO FRACO: você ainda está consciente. Pode falar, ver e ouvir o que acontece à sua volta, mas só isso. Você está fraco demais para se mexer, lutar, usar magia ou fazer qualquer coisa que gaste PMs (mas, se tiver a vantagem Energia Extra, pode usá-la). Você pode recuperar 1 PV imediatamente com um teste bem-sucedido da perícia Medicina (realizado por outra pessoa, é claro!).`;
+            resultadoHtml = `💀 <span style="font-weight:bold;color:#e67e22;">MUITO FRACO</span> (${dado}): você ainda está consciente. Pode falar, ver e ouvir o que acontece à sua volta, mas só isso. Você está fraco demais para se mexer, lutar, usar magia ou fazer qualquer coisa que gaste PMs (mas, se tiver a vantagem Energia Extra, pode usá-la). Você pode recuperar 1 PV imediatamente com um teste bem-sucedido da perícia Medicina (realizado por outra pessoa, é claro!).`;
+        } else if (dado === 2 || dado === 3) {
+            mensagem = `💀 TESTE DE MORTE - Resultado: ${dado} → INCONSCIENTE: você está inconsciente, mas não muito ferido. Pode recuperar 1 PV e despertar com uma hora de descanso, ou com um teste bem-sucedido de Medicina.`;
+            resultadoHtml = `💀 <span style="font-weight:bold;color:#f39c12;">INCONSCIENTE</span> (${dado}): você está inconsciente, mas não muito ferido. Pode recuperar 1 PV e despertar com uma hora de descanso, ou com um teste bem-sucedido de Medicina.`;
+        } else if (dado === 4 || dado === 5) {
+            mensagem = `💀 TESTE DE MORTE - Resultado: ${dado} → QUASE MORTO: você está tão ferido que vai morrer em 2d6 turnos. Um teste de Medicina pode prolongar sua vida por mais 1d6 horas, mas depois disso não são permitidos novos testes. A única forma de realmente salvá-lo é com magia.`;
+            resultadoHtml = `💀 <span style="font-weight:bold;color:#e74c3c;">QUASE MORTO</span> (${dado}): você está tão ferido que vai morrer em 2d6 turnos. Um teste de Medicina pode prolongar sua vida por mais 1d6 horas, mas depois disso não são permitidos novos testes. A única forma de realmente salvá-lo é com magia.`;
+        } else if (dado === 6) {
+            mensagem = `💀 TESTE DE MORTE - Resultado: ${dado} → MORTO: não tem mais jeito. Agora, só mesmo com ressurreição.`;
+            resultadoHtml = `💀 <span style="font-weight:bold;color:#c0392b;">MORTO</span> (${dado}): não tem mais jeito. Agora, só mesmo com ressurreição.`;
+        }
+        
+        // Exibe no chat
+        addMensagem(mensagem, false);
+        enviarRolagemFirebase(mensagem, false);
+        
+        // Exibe no módulo da aba de testes
+        const morteResultado = document.getElementById('teste-morte-resultado');
+        if (morteResultado) {
+            morteResultado.innerHTML = resultadoHtml;
+        }
+        
+        debounceSave();
+    }
+    
+    function renderizarTestes(containerId, isSub = false, subIndex = null) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        
+        let dificuldade, bonus;
+        if (isSub && subIndex !== null) {
+            dificuldade = document.getElementById(`subficha-testeDificuldadeGlobal-${subIndex}`)?.value || 'medio';
+            bonus = document.getElementById(`subficha-testeBonusGlobal-${subIndex}`)?.value || '0';
+        } else {
+            dificuldade = document.getElementById('testeDificuldadeGlobal')?.value || 'medio';
+            bonus = document.getElementById('testeBonusGlobal')?.value || '0';
+        }
+        
+        const testesOrdenados = [...TESTES_LISTA].sort((a, b) => a.nome.localeCompare(b.nome));
+        
+        let html = '';
+        
+        // Coluna 1
+        html += '<div class="testes-coluna">';
+        const metade = Math.ceil(testesOrdenados.length / 2);
+        testesOrdenados.slice(0, metade).forEach((teste, idx) => {
+            const idSuffix = isSub ? `subficha-${subIndex}` : '';
+            const chkId = `${idSuffix}teste-chk-${teste.nome.replace(/\s/g, '')}`;
+            const checkedAttr = isSub ? 
+                (subFichas[subIndex]?.testes?.[`chk_${teste.nome}`] ? 'checked' : '') : 
+                (window.testeCheckboxes?.[teste.nome] ? 'checked' : '');
+            const resultId = isSub ? `subficha-teste-resultado-${subIndex}-${teste.nome.replace(/\s/g, '')}` : `teste-resultado-${teste.nome.replace(/\s/g, '')}`;
+            const rollId = isSub ? `subficha-teste-roll-${subIndex}-${idx}` : `teste-roll-${idx}`;
+            
+            html += `
+                <div class="teste-item">
+                    <span class="teste-nome">${teste.nome}</span>
+                    <span class="teste-atributo-label">(${teste.attr})</span>
+                    <input type="checkbox" class="teste-checkbox" id="${chkId}" ${checkedAttr}>
+                    <button class="teste-btn-roll" id="${rollId}" data-teste-nome="${teste.nome}" data-teste-attr="${teste.attr}" data-sub="${subIndex !== null ? subIndex : ''}" data-is-sub="${isSub}">🎲</button>
+                    <div class="teste-resultado" id="${resultId}"></div>
+                </div>
+            `;
+        });
+        html += '</div>';
+        
+        // Coluna 2
+        html += '<div class="testes-coluna">';
+        testesOrdenados.slice(metade).forEach((teste, idx) => {
+            const idSuffix = isSub ? `subficha-${subIndex}` : '';
+            const chkId = `${idSuffix}teste-chk-${teste.nome.replace(/\s/g, '')}`;
+            const checkedAttr = isSub ? 
+                (subFichas[subIndex]?.testes?.[`chk_${teste.nome}`] ? 'checked' : '') : 
+                (window.testeCheckboxes?.[teste.nome] ? 'checked' : '');
+            const resultId = isSub ? `subficha-teste-resultado-${subIndex}-${teste.nome.replace(/\s/g, '')}` : `teste-resultado-${teste.nome.replace(/\s/g, '')}`;
+            const rollId = isSub ? `subficha-teste-roll-${subIndex}-${metade + idx}` : `teste-roll-${metade + idx}`;
+            
+            html += `
+                <div class="teste-item">
+                    <span class="teste-nome">${teste.nome}</span>
+                    <span class="teste-atributo-label">(${teste.attr})</span>
+                    <input type="checkbox" class="teste-checkbox" id="${chkId}" ${checkedAttr}>
+                    <button class="teste-btn-roll" id="${rollId}" data-teste-nome="${teste.nome}" data-teste-attr="${teste.attr}" data-sub="${subIndex !== null ? subIndex : ''}" data-is-sub="${isSub}">🎲</button>
+                    <div class="teste-resultado" id="${resultId}"></div>
+                </div>
+            `;
+        });
+        html += '</div>';
+        
+        // Ofícios
+        html += `
+            <div style="grid-column: 1/-1; display: flex; gap: 20px; flex-wrap: wrap; margin-top: 10px; padding: 10px; background: #f0ebe3; border-radius: 8px;">
+                <div style="flex: 1; min-width: 200px; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-weight: bold; font-size: 13px; color: #5a7a8a;">📜 Ofício 01:</span>
+                    <input type="text" class="teste-oficio-input" id="${isSub ? `subficha-` : ''}teste-oficio1" placeholder="Nome do Ofício" value="${isSub ? (subFichas[subIndex]?.testes?.oficio1 || '') : (window.oficio1 || '')}">
+                    <button class="teste-btn-roll" id="${isSub ? `subficha-` : ''}teste-roll-oficio1" data-teste-nome="Ofício 01" data-teste-attr="H" data-sub="${subIndex !== null ? subIndex : ''}" data-is-sub="${isSub}">🎲</button>
+                    <div class="teste-resultado" id="${isSub ? `subficha-` : ''}teste-resultado-oficio1"></div>
+                </div>
+                <div style="flex: 1; min-width: 200px; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-weight: bold; font-size: 13px; color: #5a7a8a;">📜 Ofício 02:</span>
+                    <input type="text" class="teste-oficio-input" id="${isSub ? `subficha-` : ''}teste-oficio2" placeholder="Nome do Ofício" value="${isSub ? (subFichas[subIndex]?.testes?.oficio2 || '') : (window.oficio2 || '')}">
+                    <button class="teste-btn-roll" id="${isSub ? `subficha-` : ''}teste-roll-oficio2" data-teste-nome="Ofício 02" data-teste-attr="H" data-sub="${subIndex !== null ? subIndex : ''}" data-is-sub="${isSub}">🎲</button>
+                    <div class="teste-resultado" id="${isSub ? `subficha-` : ''}teste-resultado-oficio2"></div>
+                </div>
+            </div>
+        `;
+        
+        // Atributos base
+        html += '<div style="grid-column: 1/-1; display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px; padding: 10px; background: #f0ebe3; border-radius: 8px; justify-content: center;">';
+        ATRIBUTOS_BASE.forEach(attr => {
+            const resultId = isSub ? `subficha-teste-resultado-${subIndex}-attr-${attr.attr}` : `teste-resultado-attr-${attr.attr}`;
+            const rollId = isSub ? `subficha-teste-roll-attr-${subIndex}-${attr.attr}` : `teste-roll-attr-${attr.attr}`;
+            
+            const attrDificuldade = isSub ? 
+                (subFichas[subIndex]?.testes?.[`dificuldade_${attr.attr}`] || 'medio') : 
+                (window[`testeDificuldadeAttr_${attr.attr}`] || 'medio');
+            
+            html += `
+                <div style="display: flex; align-items: center; gap: 8px; background: #ddd4c8; padding: 4px 12px; border-radius: 6px;">
+                    <span style="font-weight: bold; font-size: 13px; color: #5a7a8a; min-width: 80px;">${attr.nome} (${attr.attr})</span>
+                    <select class="testes-dificuldade-select" id="${isSub ? `subficha-` : ''}teste-dificuldade-attr-${attr.attr}" style="min-width: 70px;" data-attr="${attr.attr}" data-sub="${subIndex !== null ? subIndex : ''}" data-is-sub="${isSub}">
+                        <option value="facil" ${attrDificuldade === 'facil' ? 'selected' : ''}>Fácil</option>
+                        <option value="medio" ${attrDificuldade === 'medio' ? 'selected' : ''}>Médio</option>
+                        <option value="dificil" ${attrDificuldade === 'dificil' ? 'selected' : ''}>Difícil</option>
+                    </select>
+                    <button class="teste-btn-roll" id="${rollId}" data-teste-nome="${attr.nome}" data-teste-attr="${attr.attr}" data-sub="${subIndex !== null ? subIndex : ''}" data-is-sub="${isSub}">🎲</button>
+                    <div class="teste-resultado" id="${resultId}"></div>
+                </div>
+            `;
+        });
+        html += '</div>';
+        
+        // Módulo Teste de Morte (apenas para a ficha principal, não para sub-fichas)
+        if (!isSub) {
+            html += `
+                <div class="teste-morte-modulo">
+                    <div class="teste-morte-header">
+                        <span class="teste-morte-titulo">💀 TESTE DE MORTE</span>
+                        <button class="teste-morte-btn" id="btnTesteMorte">🎲 Rolar 1d6</button>
+                    </div>
+                    <div class="teste-morte-resultado" id="teste-morte-resultado">
+                        Clique no botão para rolar o Teste de Morte.
+                    </div>
+                </div>
+            `;
+        }
+        
+        container.innerHTML = html;
+        
+        // Configurar eventos dos botões de teste
+        container.querySelectorAll('.teste-btn-roll').forEach(btn => {
+            btn.onclick = () => {
+                const nomeTeste = btn.dataset.testeNome;
+                const attr = btn.dataset.testeAttr;
+                const isSubBtn = btn.dataset.isSub === 'true';
+                const subIdx = btn.dataset.sub !== '' ? parseInt(btn.dataset.sub) : null;
+                
+                let isTreinado = false;
+                let dificuldadeVal = 'medio';
+                let bonusVal = '0';
+                
+                if (isSubBtn && subIdx !== null) {
+                    const chkId = `subficha-teste-chk-${nomeTeste.replace(/\s/g, '')}`;
+                    const chk = document.getElementById(chkId);
+                    if (chk) isTreinado = chk.checked;
+                    
+                    if (nomeTeste === 'Ofício 01' || nomeTeste === 'Ofício 02') {
+                        isTreinado = true;
+                    } else if (ATRIBUTOS_BASE.some(a => a.nome === nomeTeste)) {
+                        isTreinado = false;
+                    }
+                    
+                    dificuldadeVal = document.getElementById(`subficha-testeDificuldadeGlobal-${subIdx}`)?.value || 'medio';
+                    bonusVal = document.getElementById(`subficha-testeBonusGlobal-${subIdx}`)?.value || '0';
+                    
+                    if (ATRIBUTOS_BASE.some(a => a.nome === nomeTeste)) {
+                        const attrKey = attr;
+                        const attrDificuldade = document.getElementById(`subficha-teste-dificuldade-attr-${attrKey}`);
+                        if (attrDificuldade) dificuldadeVal = attrDificuldade.value;
+                    }
+                    
+                    rolarTeste(nomeTeste, attr, isTreinado, bonusVal, dificuldadeVal, true, subIdx);
+                } else {
+                    const chkId = `teste-chk-${nomeTeste.replace(/\s/g, '')}`;
+                    const chk = document.getElementById(chkId);
+                    if (chk) isTreinado = chk.checked;
+                    
+                    if (nomeTeste === 'Ofício 01' || nomeTeste === 'Ofício 02') {
+                        isTreinado = true;
+                    } else if (ATRIBUTOS_BASE.some(a => a.nome === nomeTeste)) {
+                        isTreinado = false;
+                    }
+                    
+                    dificuldadeVal = document.getElementById('testeDificuldadeGlobal')?.value || 'medio';
+                    bonusVal = document.getElementById('testeBonusGlobal')?.value || '0';
+                    
+                    if (ATRIBUTOS_BASE.some(a => a.nome === nomeTeste)) {
+                        const attrKey = attr;
+                        const attrDificuldade = document.getElementById(`teste-dificuldade-attr-${attrKey}`);
+                        if (attrDificuldade) dificuldadeVal = attrDificuldade.value;
+                    }
+                    
+                    rolarTeste(nomeTeste, attr, isTreinado, bonusVal, dificuldadeVal, false, null);
+                }
+            };
+        });
+        
+        // Configurar evento do Teste de Morte (apenas para ficha principal)
+        if (!isSub) {
+            const btnMorte = document.getElementById('btnTesteMorte');
+            if (btnMorte) {
+                btnMorte.onclick = rolarTesteMorte;
+            }
+        }
+        
+        // Configurar eventos dos checkboxes para salvar o estado
+        if (!isSub) {
+            TESTES_LISTA.forEach(teste => {
+                const chk = document.getElementById(`teste-chk-${teste.nome.replace(/\s/g, '')}`);
+                if (chk) {
+                    // Carregar estado salvo
+                    if (window.testeCheckboxes && window.testeCheckboxes[teste.nome] !== undefined) {
+                        chk.checked = window.testeCheckboxes[teste.nome];
+                    }
+                    chk.onchange = () => {
+                        if (!window.testeCheckboxes) window.testeCheckboxes = {};
+                        window.testeCheckboxes[teste.nome] = chk.checked;
+                        debounceSave();
+                    };
+                }
+            });
+            
+            const oficio1 = document.getElementById('teste-oficio1');
+            const oficio2 = document.getElementById('teste-oficio2');
+            if (oficio1) {
+                oficio1.oninput = () => {
+                    window.oficio1 = oficio1.value;
+                    debounceSave();
+                };
+            }
+            if (oficio2) {
+                oficio2.oninput = () => {
+                    window.oficio2 = oficio2.value;
+                    debounceSave();
+                };
+            }
+            
+            ATRIBUTOS_BASE.forEach(attr => {
+                const sel = document.getElementById(`teste-dificuldade-attr-${attr.attr}`);
+                if (sel) {
+                    sel.onchange = () => {
+                        window[`testeDificuldadeAttr_${attr.attr}`] = sel.value;
+                        debounceSave();
+                    };
+                }
+            });
+        } else if (isSub && subIndex !== null) {
+            if (!subFichas[subIndex].testes) subFichas[subIndex].testes = {};
+            
+            TESTES_LISTA.forEach(teste => {
+                const chk = document.getElementById(`subficha-teste-chk-${teste.nome.replace(/\s/g, '')}`);
+                if (chk) {
+                    // Carregar estado salvo
+                    if (subFichas[subIndex].testes[`chk_${teste.nome}`] !== undefined) {
+                        chk.checked = subFichas[subIndex].testes[`chk_${teste.nome}`];
+                    }
+                    chk.onchange = () => {
+                        subFichas[subIndex].testes[`chk_${teste.nome}`] = chk.checked;
+                        debounceSaveSubFicha();
+                    };
+                }
+            });
+            
+            const oficio1 = document.getElementById(`subficha-teste-oficio1`);
+            const oficio2 = document.getElementById(`subficha-teste-oficio2`);
+            if (oficio1) {
+                oficio1.oninput = () => {
+                    subFichas[subIndex].testes.oficio1 = oficio1.value;
+                    debounceSaveSubFicha();
+                };
+            }
+            if (oficio2) {
+                oficio2.oninput = () => {
+                    subFichas[subIndex].testes.oficio2 = oficio2.value;
+                    debounceSaveSubFicha();
+                };
+            }
+            
+            ATRIBUTOS_BASE.forEach(attr => {
+                const sel = document.getElementById(`subficha-teste-dificuldade-attr-${attr.attr}`);
+                if (sel) {
+                    sel.onchange = () => {
+                        subFichas[subIndex].testes[`dificuldade_${attr.attr}`] = sel.value;
+                        debounceSaveSubFicha();
+                    };
+                }
+            });
+        }
+    }
+    
+    function renderizarTestesSubFicha(index) {
+        renderizarTestes(`subficha-testesContainer-${index}`, true, index);
+    }
     
     function renderizarLista(tipo, containerId) {
         const container = document.getElementById(containerId);
@@ -3846,6 +4393,10 @@
         if (!lista || !Array.isArray(lista)) { 
             container.innerHTML = '<div style="color:#6a6a5a; text-align:center; padding:10px;">Nenhum item</div>'; 
             return; 
+        }
+        
+        if (tipo === 'especializacoes') {
+            lista.sort((a, b) => (a.nome || '').localeCompare(b.nome || ''));
         }
         
         container.innerHTML = '';
@@ -3949,13 +4500,14 @@
             vantagemUnicaNome: '', vantagemUnicaCusto: 0, vantagemUnicaDesc: '',
             avatarSrc: '', 
             listas: { vantagens: [], desvantagens: [], pericias: [], especializacoes: [], itens: [], equipamentos: [], tiposDano: [], magias: [], kits: [] }, 
-            subFichas: [] 
+            subFichas: [],
+            testes: {}
         }; 
     }
     
     function extrairDadosDaTela() { 
         const pontosBase = parseFloat(pontosField?.getAttribute('data-base')) || 0; 
-        return { 
+        const dados = { 
             nome: document.getElementById('nomePersonagem').value, 
             forca: parseInt(document.getElementById('forca').value) || 0, 
             bonusForca: parseInt(document.getElementById('bonusForca').value) || 0, 
@@ -3992,8 +4544,21 @@
             vantagemUnicaDesc: document.getElementById('vantagemUnicaDesc').value, 
             avatarSrc: (document.getElementById('avatarBtn').querySelector('img')?.src) || '', 
             listas: fichaListas,
-            subFichas: subFichas 
-        }; 
+            subFichas: subFichas,
+            testes: {
+                oficio1: window.oficio1 || '',
+                oficio2: window.oficio2 || '',
+                checkboxes: window.testeCheckboxes || {},
+                dificuldadeAttr: {}
+            }
+        };
+        
+        ATRIBUTOS_BASE.forEach(attr => {
+            const val = window[`testeDificuldadeAttr_${attr.attr}`] || 'medio';
+            dados.testes.dificuldadeAttr[attr.attr] = val;
+        });
+        
+        return dados;
     }
     
     function injetarDadosNaTela(f) { 
@@ -4093,6 +4658,25 @@
         
         subFichas = f.subFichas || []; 
         
+        if (f.testes) {
+            window.oficio1 = f.testes.oficio1 || '';
+            window.oficio2 = f.testes.oficio2 || '';
+            window.testeCheckboxes = f.testes.checkboxes || {};
+            
+            if (f.testes.dificuldadeAttr) {
+                ATRIBUTOS_BASE.forEach(attr => {
+                    window[`testeDificuldadeAttr_${attr.attr}`] = f.testes.dificuldadeAttr[attr.attr] || 'medio';
+                });
+            }
+        } else {
+            window.oficio1 = '';
+            window.oficio2 = '';
+            window.testeCheckboxes = {};
+            ATRIBUTOS_BASE.forEach(attr => {
+                window[`testeDificuldadeAttr_${attr.attr}`] = 'medio';
+            });
+        }
+        
         renderizarLista('vantagens', 'vantagensLista'); 
         renderizarLista('desvantagens', 'desvantagensLista'); 
         renderizarLista('pericias', 'periciasLista'); 
@@ -4103,6 +4687,7 @@
         renderizarLista('magias', 'magiasLista'); 
         renderizarKits(); 
         renderizarSubFichas(); 
+        renderizarTestes('testesContainer', false, null);
         atualizarBotaoConverter(); 
         atualizarPontos(); 
         
@@ -4553,7 +5138,8 @@
                         pericias: dados.listas?.pericias || [], especializacoes: dados.listas?.especializacoes || [], 
                         itens: dados.listas?.itens || [], equipamentos: dados.listas?.equipamentos || [], 
                         tiposDano: dados.listas?.tiposDano || [], magias: dados.listas?.magias || [], kits: dados.listas?.kits || [] }, 
-                    subFichas: dados.subFichas || [] 
+                    subFichas: dados.subFichas || [],
+                    testes: dados.testes || {}
                 }; 
                 addMensagem("📥 Importando ficha...", false);
                 injetarDadosNaTela(fichaCompleta); 
@@ -4700,20 +5286,6 @@
     document.getElementById('btnEntrarMestre').onclick = entrarComoMestre;
     document.getElementById('btnEntrarJogador').onclick = entrarComoJogador;
     
-    document.querySelectorAll('.btn-atributo-modulo').forEach(btn => { 
-        btn.onclick = () => { 
-            const nome = btn.dataset.nome; 
-            const atributoId = btn.dataset.atributo; 
-            const bonus1Id = btn.dataset.bonus1; 
-            const bonus2Id = btn.dataset.bonus2; 
-            const bonus3Id = btn.dataset.bonus3 || null;
-            const chk1Id = btn.dataset.chk1;
-            const chk2Id = btn.dataset.chk2;
-            const qtdId = btn.dataset.qtd;
-            const resultId = btn.dataset.result || btn.dataset.nome;
-            testarAtributo(nome, atributoId, bonus1Id, bonus2Id, bonus3Id, chk1Id, chk2Id, qtdId, resultId); 
-        }; 
-    });
     document.getElementById('btnAtaqueCurto').onclick = ataqueCurto;
     document.getElementById('btnAtaqueDistancia').onclick = ataqueDistancia;
     document.getElementById('btnDefesa').onclick = defesa;
@@ -4794,12 +5366,19 @@
     document.querySelectorAll('.aba-btn').forEach(btn => { btn.onclick = () => { const aba = btn.dataset.aba; document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('ativa')); document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('ativa')); btn.classList.add('ativa'); document.getElementById(`aba-${aba}`).classList.add('ativa'); }; });
     
     console.log('✅ Sistema 3D&T Alpha - TEMA CLARO ATIVADO!');
-    console.log('✅ SUB-FICHAS CORRIGIDAS: Todos os cálculos idênticos à ficha principal!');
-    console.log('✅ Valores lidos como soma direta de inteiros (Valor + B1 + B2)');
-    console.log('✅ BFA e BFD adicionados sem dobrar');
-    console.log('✅ Checkboxes de B1 e B2 respeitados');
-    console.log('✅ Críticos dobram F, PdF e A corretamente');
-    console.log('✅ TODOS os valores convertidos com Number() para evitar concatenação!');
+    console.log('✅ DUPLICATAS REMOVIDAS: Falsificação e Rastreio agora aparecem apenas 1 vez cada!');
+    console.log('✅ CHECKBOXES SALVANDO ESTADO CORRETAMENTE!');
+    console.log('✅ ABA DE TESTES ATUALIZADA:');
+    console.log('  - Dificuldades: Fácil = 8, Médio = 10, Difícil = 14');
+    console.log('  - Arrombamento (F) agora aparece como "Arrombamento" com atributo F');
+    console.log('  - B1 dos atributos da aba principal é considerado');
+    console.log('  - Botões de teste removidos da aba principal');
+    console.log('  - Ofícios 01 e 02 são sempre treinados (sem indicador visual)');
+    console.log('  - Nome dos ofícios aparece no chat de rolagens');
+    console.log('  - Especializações em ordem alfabética na aba de testes');
+    console.log('  - +4 do treinamento NÃO é dobrado quando o dado dá 6');
+    console.log('  - Sub-fichas também atualizadas');
+    console.log('✅ NOVO: Módulo TESTE DE MORTE adicionado na aba de testes!');
 </script>
 </body>
 </html>
